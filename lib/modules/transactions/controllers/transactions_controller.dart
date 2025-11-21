@@ -1,8 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:path/path.dart';
 import 'package:personal_finance_manager/data/models/transaction_model.dart';
 import 'package:personal_finance_manager/data/repositories/transaction_repository.dart';
 import 'package:personal_finance_manager/utils/enums/transaction_type.dart';
@@ -22,6 +20,7 @@ class TransactionsController extends GetxController {
   @override
   void onInit() {
     super.onInit();
+    loadTransactions();
   }
 
   // Load all transactions

@@ -1,12 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:personal_finance_manager/data/models/transaction_model.dart';
-import 'package:personal_finance_manager/data/repositories/category_repository.dart';
 import 'package:personal_finance_manager/data/repositories/transaction_repository.dart';
 
 class HomeController extends GetxController {
   final TransactionRepository _transactionRepository = TransactionRepository();
-  final CategoryRepository _categoryRepository = CategoryRepository();
 
   // Observable variables
   final RxBool isLoading = true.obs;
